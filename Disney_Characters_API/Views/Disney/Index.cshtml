@@ -1,0 +1,57 @@
+﻿@model DisneyRoot
+
+
+<h1> Disney Characters</h1>
+
+<div class="next-button" >
+    @if (@Model.Info.PreviousPage != null)
+    {
+        <a asp-action="Index" asp-route-url="@Model.Info.PreviousPage" class="next-button">Previous Page</a>
+    }
+    @if (@Model.Info.NextPage != null)
+    {
+        <a asp-action="Index" asp-route-url="@Model.Info.NextPage" class="next-button">Next Page</a>
+    }
+</div>
+
+
+<div class="img-size">
+    @foreach (var character in Model.Data)
+        {
+            <ul>
+
+                <li>Character Name: @character.Name</li>
+                <li>Character ID# : @character._id </li>
+                
+                <li> character Created Date & Time : @character.CreatedAt</li>
+                <li class="img"> @character Image: <img src=@character.ImageUrl height="150vh" width="150vh" > </li>
+
+            </ul>
+            
+        }
+
+
+   
+
+   
+
+</div>
+
+
+
+<h2> @Model.Info.TotalPages</h2>
+
+
+<div class="next-button" >
+    @if (@Model.Info.PreviousPage != null)
+    {
+        <a asp-action="Index" asp-route-url="@Model.Info.PreviousPage" class="next-button">Previous Page</a>
+    }
+    @if (@Model.Info.NextPage != null)
+    {
+        <a asp-action="Index" asp-route-url="@Model.Info.NextPage" class="next-button">Next Page</a>
+    }
+</div>
+
+
+
