@@ -30,39 +30,7 @@ namespace Disney_Characters_API.Controllers
             return View(disneyRoot);
 
         }
-        ////// obataining images from URl link == 2 ways?
-        ////public IActionResult Images([FromQuery(Name = "url")] string resourceUrl = "http://api.disneyapi.dev/character")
-        ////{
-        ////    //    //var Images = DisneyDescription(resourceUrl);
-        ////    //    //return View(Images);
-
-
-        ////    if (resourceUrl.StartsWith("http://api.disneyapi.dev/character"))
-        ////    {
-        ////        var client = new HttpClient();
-
-        ////        var url = resourceUrl;
-
-        ////        var response = client.GetStringAsync(url).Result;
-
-        ////        var root = JsonConvert.DeserializeObject<DisneyRoot>(response);
-
-        ////        return View(root);
-        ////    }
-        ////    else
-        ////    {
-        ////        return View("Invalid Page");
-        ////    }
-
-
-        //}
-
-
-
-        ////public IActionResult AnotherPage()
-        ////{
-
-        ////}
+        
     }
 }
 

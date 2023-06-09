@@ -1,118 +1,128 @@
 ﻿html {
     font-size: 14px;
-    
-    
 }
 
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
+
 .navbar {
     background-color: azure;
-    background-image: url("https://media2.giphy.com/media/WfkE2Hh9Wr0Z9GlO4J/giphy.gif");
+    font-family: fantasy;
 }
-.nav-link{
-    font-size:20px;
-    font-weight:bolder;
-    
+
+.nav-link {
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
 }
-.text-center{
-    font-family:fantasy;
-    font-size:large;
-    background-color:lavenderblush;
-    
+
+.text-center {
+    font-family: fantasy;
+    font-size: large;
+    background-color: azure;
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-    position: relative;
-    min-height: 100%;
-    background-image: url("https://media2.giphy.com/media/WfkE2Hh9Wr0Z9GlO4J/giphy.gif");
+    /*    position: relative;*/
+    /*    min-height: 100%;*/
+
+
+    
 }
 
 body {
-    margin-bottom: 60px;
-    /*    background-color: pink;*/
-/*        background-image: url("https://i.pinimg.com/236x/1a/f1/86/1af186b12c040a5a7f04412f02a88078.jpg");*/
     background-image: url("https://i0.wp.com/media.giphy.com/media/R1DUhPHF3GBXy/giphy.gif");
-    
-    
 }
 
- h1{
-     text-align:center;
-     font-family:fantasy;
-     text-decoration:underline;
-    
- }
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+
+h2{
+    font-family:fantasy;
+    text-align:center;
+   color:orangered;
+}
 
 ul {
     list-style: none;
-    text-decoration-line:underline;
+    text-decoration-line: underline;
     align-content: center;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
     cursor: pointer;
-/*    background-color: lavender;*/
-    
+   
 }
+
+
+
+li {
+    background-color: aliceblue;
+}
+
 .img-size {
     display: contents;
-    background-color:transparent;
-    /*    background-image: url("https://i.pinimg.com/564x/5a/94/4d/5a944d9946a9e7b34235c5787401d7eb.jpg");*/
-    display:flex;
     
+    display: flex;
     flex-wrap: wrap;
     text-align: center;
-/*    border-style: double;*/
-    border-block-start-color:darkred;
-    border-block-end-color:azure;
-    justify-content:space-around;
     
-   
-    font-family:fantasy;
-    font-size:14px;
+    border-block-start-color: darkred;
+    border-block-end-color: azure;
+    justify-content: space-around;
+    font-family: fantasy;
+    font-size: 14px;
     font-weight: bold;
     
 }
-    .img-size:hover > :not(:hover){
+
+    .img-size:hover > :not(:hover) {
         opacity: .2;
-        
+      
     }
 
 
 .img {
     overflow: hidden;
-    cursor:pointer;
+    cursor: pointer;
+   
 }
 
 
 .img, ul :hover {
     overflow: hidden;
-     background-color:lightpink;
-     
-     
-     
+    background-color: aliceblue;
+    
 }
 
 
 
 .next-button {
-    color: black;
-    font-size: 16px;
-    background-color:lavenderblush;
+    color: orangered;
+    font-family: fantasy;
+    font-size: 20px;
+    background-color: lavenderblush;
+    display: flex;
+    justify-content: space-between;
 }
-.next-button :hover{
-    font-family:monospace;
-    font-size:xx-large;
-/*    backdrop-filter:blur();*/
-    color:red;
-    background-color:black;
-}
+
+    .next-button :hover {
+        font-family: fantasy;
+        font-size: xx-large;
+        
+        color: lavenderblush;
+        background-color: black;
+    }
